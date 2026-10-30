@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { MessageCircle, Phone, Menu, X, ShieldCheck, ChevronRight } from 'lucide-react';
+import { MessageCircle, Phone, Menu, X, ChevronRight, CheckCircle2 } from 'lucide-react';
 import { PlatformSettings } from '@/types';
 
 interface HeaderProps {
@@ -25,22 +25,16 @@ export default function Header({ settings }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-40 bg-[#FFFFFF]/95 backdrop-blur-md border-b border-[#E5EBE7] shadow-xs">
-      {/* Top micro announcement / phone banner - DESKTOP ONLY to prevent double-banner clutter on mobile */}
+      {/* Top micro announcement banner - DESKTOP ONLY */}
       <div className="hidden sm:block bg-[#176B5B] text-white text-xs py-1.5 px-4">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
           <div className="flex items-center gap-2 font-medium">
             <span className="inline-block w-2 h-2 rounded-full bg-[#69B9A6] animate-pulse"></span>
             <span>Official Daily Procurement Rates • East Godavari, West Godavari &amp; Krishna (AP)</span>
           </div>
-          <div className="flex items-center gap-4 text-[11px] text-[#EAF6F0]">
-            <span>Buyer Desk: {settings?.buyer_name || 'M. Srinivasa Rao'}</span>
-            <a
-              href={`tel:+91${buyerPhone}`}
-              className="flex items-center gap-1 hover:text-white transition-colors"
-            >
-              <Phone className="w-3 h-3 text-[#69B9A6]" />
-              <span>+91 {buyerPhone}</span>
-            </a>
+          <div className="flex items-center gap-1.5 text-[11px] text-[#EAF6F0]">
+            <CheckCircle2 className="w-3.5 h-3.5 text-[#69B9A6]" />
+            <span>Pond-Gate Electronic Weighing &amp; Spot Settlement</span>
           </div>
         </div>
       </div>
@@ -88,7 +82,7 @@ export default function Header({ settings }: HeaderProps) {
             })}
           </nav>
 
-          {/* Desktop Actions */}
+          {/* Desktop Actions (Admin link removed from public view) */}
           <div className="hidden lg:flex items-center gap-3">
             <a
               href={`https://wa.me/91${buyerWhatsApp}?text=${encodeURIComponent(
@@ -99,7 +93,7 @@ export default function Header({ settings }: HeaderProps) {
               className="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold text-[#176B5B] bg-[#EAF6F0] hover:bg-[#d8efe4] border border-[#69B9A6]/30 rounded-lg transition-all shadow-xs"
             >
               <MessageCircle className="w-4 h-4 text-[#25D366] fill-[#25D366]/20" />
-              <span>WhatsApp Buyer</span>
+              <span>WhatsApp Desk</span>
             </a>
 
             <a
@@ -108,14 +102,6 @@ export default function Header({ settings }: HeaderProps) {
             >
               <span>Check Today&apos;s Prices</span>
               <ChevronRight className="w-4 h-4" />
-            </a>
-
-            <a
-              href="/admin/login"
-              className="p-2 text-[#78837F] hover:text-[#176B5B] hover:bg-[#F8FAF8] rounded-lg transition-colors"
-              title="Buyer Admin Portal"
-            >
-              <ShieldCheck className="w-4 h-4" />
             </a>
           </div>
 
@@ -152,7 +138,7 @@ export default function Header({ settings }: HeaderProps) {
         </div>
       </div>
 
-      {/* Mobile Navigation Drawer */}
+      {/* Mobile Navigation Drawer (Admin link removed) */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-[#E5EBE7] px-4 pt-3 pb-6 space-y-3 shadow-xl animate-in slide-in-from-top-2 duration-150">
           <nav className="flex flex-col space-y-1.5">
@@ -195,17 +181,7 @@ export default function Header({ settings }: HeaderProps) {
                 className="flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-bold text-white bg-[#2185D0] rounded-xl active:scale-95"
               >
                 <Phone className="w-4 h-4 fill-white" />
-                <span>Call Buyer</span>
-              </a>
-            </div>
-
-            <div className="pt-2 text-center">
-              <a
-                href="/admin/login"
-                className="inline-flex items-center gap-1.5 text-xs text-[#78837F] hover:text-[#176B5B]"
-              >
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>Buyer Admin Login</span>
+                <span>Call Desk</span>
               </a>
             </div>
           </div>

@@ -60,11 +60,11 @@ export default function HeroSection({
               </a>
 
               <a
-                href={`tel:+91${buyerPhone}`}
+                href="#prices-section"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-bold text-base text-[#176B5B] bg-white hover:bg-[#EAF6F0] border-2 border-[#176B5B]/20 active:scale-95 transition-all shadow-xs"
               >
                 <Phone className="w-4 h-4 text-[#2185D0]" />
-                <span>Contact Buyer</span>
+                <span>Contact Buying Desk</span>
               </a>
             </div>
 
@@ -158,15 +158,10 @@ export default function HeroSection({
                   </div>
                 </div>
 
-                {/* Buyer contact snapshot */}
+                {/* Coverage snapshot */}
                 <div className="flex items-center justify-between text-xs pt-1 text-[#EAF6F0]/80">
-                  <span>Buyer: <strong className="text-white">{buyerName}</strong></span>
-                  <a
-                    href={`tel:+91${buyerPhone}`}
-                    className="text-[#69B9A6] hover:underline font-semibold"
-                  >
-                    +91 {buyerPhone}
-                  </a>
+                  <span>Procurement Desk: <strong className="text-white">Active Daily</strong></span>
+                  <span className="text-[#69B9A6] font-semibold">East &amp; West Godavari, Krishna</span>
                 </div>
 
               </div>

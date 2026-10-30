@@ -117,23 +117,21 @@ export default function SellModal({
           </a>
         </div>
 
-        {/* Buyer Transparency & Trust Information */}
+        {/* Procurement Desk Guarantee Information */}
         <div className="pt-4 border-t border-[#E5EBE7] text-xs text-[#78837F] space-y-1.5 text-left bg-[#F8FAF8] -mx-6 -mb-6 p-4 rounded-b-2xl">
           <div className="flex items-center justify-between">
-            <span className="font-semibold text-[#202B28]">{settings?.buyer_name || 'Designated Buyer'}</span>
+            <span className="font-semibold text-[#202B28]">Direct Pond Procurement Desk</span>
             <span className="inline-flex items-center gap-1 text-[#176B5B] font-medium">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#176B5B]" />
-              Direct Buyer
+              Spot Settlement
             </span>
           </div>
-          {settings?.business_name && (
-            <p className="text-[11px] text-[#78837F] truncate">{settings.business_name}</p>
-          )}
-          {settings?.contact_message && (
-            <p className="text-[11px] text-[#202B28] pt-1 italic">
-              &ldquo;{settings.contact_message}&rdquo;
-            </p>
-          )}
+          <p className="text-[11px] text-[#78837F]">
+            East Godavari, West Godavari &amp; Krishna (AP)
+          </p>
+          <p className="text-[11px] text-[#202B28] pt-0.5">
+            Electronic weighing scales &amp; instant bank transfer/cash on pond harvest.
+          </p>
         </div>
       </div>
     </div>

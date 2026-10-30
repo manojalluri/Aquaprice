@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { PlatformSettings } from '@/types';
-import { MessageCircle, Phone, ShieldCheck, MapPin, CheckCircle2 } from 'lucide-react';
+import { MessageCircle, Phone, MapPin, CheckCircle2 } from 'lucide-react';
 
 interface FooterProps {
   settings?: PlatformSettings | null;
@@ -11,8 +11,6 @@ interface FooterProps {
 export default function Footer({ settings }: FooterProps) {
   const buyerPhone = settings?.buyer_phone || '9848022338';
   const whatsappNumber = settings?.whatsapp_number || '9848022338';
-  const buyerName = settings?.buyer_name || 'M. Srinivasa Rao';
-  const businessName = settings?.business_name || 'Sri Venkateswara Seafoods & Prawn Procurement';
 
   return (
     <footer className="mt-auto bg-[#FFFFFF] border-t border-[#E5EBE7] text-[#78837F]">
@@ -50,7 +48,7 @@ export default function Footer({ settings }: FooterProps) {
                 className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-sm text-white bg-[#2185D0] hover:bg-[#1b73b5] transition-all shadow-sm shadow-[#2185D0]/20"
               >
                 <Phone className="w-4 h-4 fill-white" />
-                <span>Call +91 {buyerPhone}</span>
+                <span>Call Procurement Desk</span>
               </a>
             </div>
           </div>
@@ -100,7 +98,7 @@ export default function Footer({ settings }: FooterProps) {
               </li>
               <li className="flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-[#176B5B]" />
-                <span>Direct Pond-Side Netting & Weighing</span>
+                <span>Direct Pond-Side Netting &amp; Weighing</span>
               </li>
             </ul>
           </div>
@@ -128,31 +126,29 @@ export default function Footer({ settings }: FooterProps) {
               </li>
               <li>
                 <a href="/contact" className="hover:text-[#176B5B] transition-colors">
-                  Contact Buyer
+                  Contact Buyer Desk
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Col 4: Buyer Office & Discreet Admin Link */}
+          {/* Col 4: Procurement Operating Standards (Admin link removed) */}
           <div className="space-y-3">
             <h4 className="text-xs uppercase tracking-wider font-bold text-[#202B28]">
-              Buyer Contact Details
+              Procurement Standards
             </h4>
-            <p className="text-xs font-semibold text-[#202B28]">{buyerName}</p>
-            <p className="text-xs text-[#78837F]">{businessName}</p>
-            <p className="text-xs text-[#78837F]">
-              Phone: +91 {buyerPhone}
-              {settings?.alternate_phone && ` / +91 ${settings.alternate_phone}`}
+            <p className="text-xs text-[#78837F] leading-relaxed">
+              Transparent spot rates published daily for aquaculture farmers. Direct pond-side digital weighing and electronic bank settlement across Andhra Pradesh.
             </p>
-            <div className="pt-2">
-              <a
-                href="/admin/login"
-                className="inline-flex items-center gap-1.5 text-xs text-[#78837F] hover:text-[#176B5B] border border-[#E5EBE7] px-3 py-1.5 rounded-lg bg-[#F8FAF8] transition-colors"
-              >
-                <ShieldCheck className="w-3.5 h-3.5 text-[#176B5B]" />
-                <span>Buyer Admin Login</span>
-              </a>
+            <div className="p-3 bg-[#F8FAF8] rounded-xl border border-[#E5EBE7] text-xs text-[#176B5B] font-semibold space-y-1">
+              <div className="flex items-center gap-1.5">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>Net Weight Cash / RTGS</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>Zero Middlemen Deduction</span>
+              </div>
             </div>
           </div>
 
@@ -161,7 +157,7 @@ export default function Footer({ settings }: FooterProps) {
         {/* Bottom copyright & disclaimer */}
         <div className="mt-12 pt-6 border-t border-[#E5EBE7] flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#78837F] gap-3">
           <p>
-            &copy; 2026 AquaPrice India. All rights reserved. Daily prawn rates published for farmer information.
+            &copy; 2026 AquaPrice AP. All rights reserved. Daily prawn rates published for farmer information.
           </p>
           <p className="text-right">
             Rates subject to pond health, count uniformity, and shell firmness at spot inspection.
@@ -171,4 +167,3 @@ export default function Footer({ settings }: FooterProps) {
     </footer>
   );
 }
-
