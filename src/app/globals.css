@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --primary-deep: #176B5B;
+  --secondary-aqua: #69B9A6;
+  --accent-mint: #EAF6F0;
+  --bg-page: #F8FAF8;
+  --bg-card: #FFFFFF;
+  --text-primary: #202B28;
+  --text-secondary: #78837F;
+  --border-color: #E5EBE7;
+  --whatsapp-green: #25D366;
+  --call-blue: #2185D0;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D7CE;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #176B5B;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

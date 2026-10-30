@@ -1,0 +1,224 @@
+{
+  "admin_users": [
+    {
+      "id": "admin-1",
+      "email": "buyer@aquaprice.com",
+      "role": "buyer",
+      "is_active": true,
+      "name": "M. Srinivasa Rao (Prawn Buyer)",
+      "password_hash": "$2b$10$1.2eLfqL87e/uLXaypYMyeUtE5X5H6cMVNwWfVcKDDOFSx20JZdm.",
+      "created_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "admin-2",
+      "email": "superadmin@aquaprice.com",
+      "role": "super_admin",
+      "is_active": true,
+      "name": "Super Admin",
+      "password_hash": "$2b$10$1.2eLfqL87e/uLXaypYMyeUtE5X5H6cMVNwWfVcKDDOFSx20JZdm.",
+      "created_at": "2026-10-30T04:39:39.949Z"
+    }
+  ],
+  "prawn_counts": [
+    {
+      "id": "count-30",
+      "count_label": "30 Count",
+      "display_order": 1,
+      "is_active": true,
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "count-40",
+      "count_label": "40 Count",
+      "display_order": 2,
+      "is_active": true,
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "count-50",
+      "count_label": "50 Count",
+      "display_order": 3,
+      "is_active": true,
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "count-60",
+      "count_label": "60 Count",
+      "display_order": 4,
+      "is_active": true,
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "count-70",
+      "count_label": "70 Count",
+      "display_order": 5,
+      "is_active": true,
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "count-80",
+      "count_label": "80 Count",
+      "display_order": 6,
+      "is_active": true,
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "count-90",
+      "count_label": "90 Count",
+      "display_order": 7,
+      "is_active": true,
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "count-100",
+      "count_label": "100 Count",
+      "display_order": 8,
+      "is_active": true,
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    }
+  ],
+  "prawn_prices": [
+    {
+      "id": "p-30",
+      "count_id": "count-30",
+      "current_price_per_kg": 522,
+      "publication_status": "published",
+      "published_at": "2026-10-30T05:04:51.246Z",
+      "updated_by": "M. Srinivasa Rao (Prawn Buyer)",
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T05:04:51.246Z"
+    },
+    {
+      "id": "p-40",
+      "count_id": "count-40",
+      "current_price_per_kg": 440,
+      "publication_status": "published",
+      "published_at": "2026-10-30T04:39:39.949Z",
+      "updated_by": "admin-1",
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "p-50",
+      "count_id": "count-50",
+      "current_price_per_kg": 380,
+      "publication_status": "published",
+      "published_at": "2026-10-30T04:39:39.949Z",
+      "updated_by": "admin-1",
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "p-60",
+      "count_id": "count-60",
+      "current_price_per_kg": 340,
+      "publication_status": "published",
+      "published_at": "2026-10-30T04:39:39.949Z",
+      "updated_by": "admin-1",
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "p-70",
+      "count_id": "count-70",
+      "current_price_per_kg": 310,
+      "publication_status": "published",
+      "published_at": "2026-10-30T04:39:39.949Z",
+      "updated_by": "admin-1",
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "p-80",
+      "count_id": "count-80",
+      "current_price_per_kg": 280,
+      "publication_status": "published",
+      "published_at": "2026-10-30T04:39:39.949Z",
+      "updated_by": "admin-1",
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "p-90",
+      "count_id": "count-90",
+      "current_price_per_kg": 255,
+      "publication_status": "published",
+      "published_at": "2026-10-30T04:39:39.949Z",
+      "updated_by": "admin-1",
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    },
+    {
+      "id": "p-100",
+      "count_id": "count-100",
+      "current_price_per_kg": 230,
+      "publication_status": "published",
+      "published_at": "2026-10-30T04:39:39.949Z",
+      "updated_by": "admin-1",
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-1793337343321",
+      "title": "Today's Prawn Market Rates Published",
+      "description": "Fresh daily procurement rates for East Godavari, West Godavari & Krishna districts are active.",
+      "is_published": false,
+      "created_at": "2026-10-30T05:15:43.321Z",
+      "updated_at": "2026-10-30T05:26:01.562Z"
+    },
+    {
+      "id": "ann-1",
+      "title": "Today's Prawn Market Rates Published",
+      "description": "Fresh daily procurement rates for East Godavari, West Godavari & Krishna districts are active. Direct pond harvesting available.",
+      "is_published": true,
+      "created_at": "2026-10-30T04:39:39.949Z",
+      "updated_at": "2026-10-30T04:39:39.949Z"
+    }
+  ],
+  "platform_settings": {
+    "id": "settings-1",
+    "buyer_name": "M. Srinivasa Rao",
+    "buyer_phone": "9848022338",
+    "whatsapp_number": "9848022338",
+    "alternate_phone": "9440188992",
+    "business_name": "Sri Venkateswara Aqua Feeds & Prawn Procurement",
+    "contact_message": "Direct pond-gate harvesting, immediate electronic weighing & spot bank settlement across East & West Godavari and Krishna (AP).",
+    "updated_at": "2026-10-30T04:39:39.949Z"
+  },
+  "admin_activity_logs": [
+    {
+      "id": "log-1793337343321",
+      "admin_id": "M. Srinivasa Rao (Prawn Buyer)",
+      "action": "CREATE_ANNOUNCEMENT",
+      "entity_type": "announcements",
+      "entity_id": "ann-1793337343321",
+      "created_at": "2026-10-30T05:15:43.321Z"
+    },
+    {
+      "id": "log-1793336691246",
+      "admin_id": "M. Srinivasa Rao (Prawn Buyer)",
+      "action": "PUBLISH_SINGLE_PRICE",
+      "entity_type": "prawn_prices",
+      "entity_id": "count-30",
+      "created_at": "2026-10-30T05:04:51.246Z"
+    },
+    {
+      "id": "log-1",
+      "admin_id": "admin-1",
+      "action": "PUBLISH_PRICES",
+      "entity_type": "prawn_prices",
+      "entity_id": "bulk",
+      "created_at": "2026-10-30T04:39:39.949Z"
+    }
+  ]
+}
